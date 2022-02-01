@@ -8,7 +8,7 @@
 
 * [Program.cs](./CS/CopyPage/Program.cs) (VB: [Program.vb](./VB/CopyPage/Program.vb))
 <!-- default file list end -->
-# How to copy a page from one document to another PDF
+# PDF Document API - Copy Pages from One Document to Another
 
 
 This example shows how to extract a page from one PDF document and insert it to another PDF. 
