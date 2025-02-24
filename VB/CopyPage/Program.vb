@@ -6,12 +6,13 @@ Namespace CopyPage
 
         Shared Sub Main(ByVal args As String())
             Using source As PdfDocumentProcessor = New PdfDocumentProcessor()
-                source.LoadDocument("..\..\Document1.pdf")
+                source.LoadDocument("..\..\..\Document1.pdf")
                 Using target As PdfDocumentProcessor = New PdfDocumentProcessor()
-                    target.LoadDocument("..\..\Document2.pdf")
+                    target.LoadDocument("..\..\..\Document2.pdf")
                     target.Document.Pages.Insert(3, source.Document.Pages(0))
-                    target.SaveDocument("..\..\Result.pdf")
+                    target.SaveDocument("..\..\..\Result.pdf")
                 End Using
+                Process.Start(New ProcessStartInfo("..\..\..\Result.pdf") With {.UseShellExecute = True})
             End Using
         End Sub
     End Class
